@@ -1,5 +1,23 @@
 .contener {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .contener {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contener {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contener {
+    max-width: 1200px;
+  }
 }
