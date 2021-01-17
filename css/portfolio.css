@@ -354,8 +354,12 @@ img {
 
 .social-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+
+.social-links__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-links__link {
