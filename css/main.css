@@ -59,7 +59,7 @@ img {
 }
 
 .contener {
-  width: 100%;
+  max-width: 100%;
   padding: 0 15px;
 }
 
@@ -113,9 +113,24 @@ img {
 }
 
 .footer__logo {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
   color: var(--white-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    text-align: left;
+    letter-spacing: 0.03em;
+  }
 }
 
 .header {
@@ -490,7 +505,7 @@ img {
 }
 
 .team {
-  margin: auto;
+  margin: 0 auto;
   background-color: #f5f4fa;
 }
 
@@ -533,6 +548,12 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .contener {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -607,7 +628,7 @@ img {
   fill: var(--accent-color);
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .clients__list-item:nth-child(2n + 1) {
     margin-right: 30px;
   }
@@ -649,37 +670,24 @@ img {
 }
 
 .footer {
-  margin: auto;
   background-color: #2f303a;
 }
 
 .footer__contener {
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  align-items: baseline;
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .footer__left-side {
-  width: 231px;
-  margin-right: 70px;
-}
-
-.footer__center-side {
-  min-width: 206px;
-  height: 80px;
-  margin-right: 93px;
-}
-
-.contact__list-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 60px;
 }
 
 .contact__list-city {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
@@ -688,9 +696,21 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.contact__list-item {
+  text-align: center;
+}
+
+.contact__list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer__center-side {
+  margin-bottom: 60px;
 }
 
 .footer__title {
@@ -698,22 +718,21 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
 }
 
-.footer__form {
-  display: flex;
-  align-items: center;
+.footer__right-side {
+  width: 450px;
+  margin: 0 auto;
 }
 
 .footer__form-email {
-  padding-left: 15px;
-  margin-right: 12px;
-  width: 358px;
+  width: 450px;
   height: 50px;
+  margin-bottom: 20px;
   color: var(--white-color);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -725,6 +744,76 @@ img {
   height: 24px;
   margin-left: 10px;
   fill: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contener {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 768px;
+  }
+  .footer__left-side {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
+  .footer__center-side {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__contener {
+    width: 1200px;
+  }
+  .footer__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: left;
+    letter-spacing: 0.03em;
+  }
+  .footer__left-side {
+    width: 231px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
+  .contact__list-item {
+    text-align: left;
+  }
+  .contact__list-city {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    text-align: left;
+    letter-spacing: 0.03em;
+  }
+  .contact__list-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    text-align: left;
+    letter-spacing: 0.03em;
+  }
+  .footer__center-side {
+    min-width: 206px;
+    height: 80px;
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+  .footer__right-side {
+    width: 570px;
+  }
+  .footer__form {
+    display: flex;
+    align-items: center;
+  }
+  .footer__form-email {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 .backdrop {
