@@ -14,57 +14,62 @@
 
 <body>
     <header class="header"> 
-       <div class="contener">
+       <div class="contener header__contener">
             <nav class="navigation">
                 <a class="logo header__logo" href="#" lang="en"><span class="logo-first">Web</span>Studio </a>
-                <ul class="navigation__list">
-                    <li class="navigation__list-item">
-                        <a class="navigation__list-link current" href="#">Студия</a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__list-link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__list-link" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            
-            <address class="address">
-                <ul class="address__list">
-                    <li class="address__list-item">
-                            <a class="address__list-link" href="mailto:info@devstudio.com">
-                                <svg width="16px" height="12px" class="address__list-icon">
-                                    <use href="./images/sprite.svg#envelope">
-                                    </use>
-                                </svg>
-                                info@devstudio.com
-                            </a>
-                    </li>
-                    <li class="address__list-item">
-                        <a class="address__list-link" href="tel:+380961111111">
-                            <svg width="10px" height="16px" class="address__list-icon">
-                                <use href="./images/sprite.svg#smartphone">
-                                </use>
-                            </svg>
-                            +38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
-       </div>
+                <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+                    <svg class="menu-button__icon" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+                        <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+                    </svg>
+                </button>
+                    <ul class="navigation__list">
+                        <li class="navigation__list-item">
+                            <a class="navigation__list-link current" href="#">Студия</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a class="navigation__list-link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="navigation__list-item">
+                            <a class="navigation__list-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <address class="address">
+                        <ul class="address__list">
+                            <li class="address__list-item">
+                                <a class="address__list-link" href="mailto:info@devstudio.com">
+                                    <svg width="16px" height="12px" class="address__list-icon">
+                                        <use href="./images/sprite.svg#envelope">
+                                        </use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="address__list-item">
+                                <a class="address__list-link" href="tel:+380961111111">
+                                    <svg width="10px" height="16px" class="address__list-icon">
+                                        <use href="./images/sprite.svg#smartphone">
+                                        </use>
+                                    </svg>
+                                    +38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </nav>
+        </div>
     </header>
 
     <main class="main">
         <!--HERO-->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="contener hero__contener">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="button" data-modal-open>Заказать услугу</button>
             </div>
-        </section>
+        </section> -->
 
         <!--ADVANTAGES-->
-        <section class="advantages  section">
+        <!-- <section class="advantages  section">
             <div class="contener">
                 <h2 class="visually-hidden">Особенности</h2>
                 <ul class="advantages__list">
@@ -90,10 +95,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--ACTIVITIES-->
-        <section class="activities">           
+        <!-- <section class="activities">           
             <div class="contener activities__contener">
                 <h2 class="activities__title">Чем мы занимаемся</h2>
                 <ul class="activities__list">
@@ -130,10 +135,10 @@
                     </li>
                 </ul>
            </div>
-        </section>
+        </section> -->
 
         <!--OUR TEAM-->
-        <section class="team section">
+        <!-- <section class="team section">
             <div class="contener">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
@@ -359,10 +364,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     
         <!--CLIENTS-->
-        <section class="clients section">
+        <!-- <section class="clients section">
             <div class="contener">
                 <h2 class="clients__title">Постоянные клиенты</h2>
                 <ul class="clients__list">
@@ -417,12 +422,12 @@
 
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
 
     <!--CONTACT INFORMATION-->
-    <footer class="footer section">
+    <!-- <footer class="footer section">
          <div class="footer__contener">
             <div class="footer__left-side">
                 <h2 class="visually-hidden">Контакты</h2>
@@ -501,7 +506,7 @@
             </div>
             
         </div>
-    </footer>
+    </footer> -->
 
     <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -565,6 +570,7 @@
     </div> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
