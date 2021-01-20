@@ -10,8 +10,8 @@
 .example-list__thumb {
   position: relative;
   overflow: hidden;
-  width: 450px;
-  height: 404px;
+  // width: 450px;
+  // height: 404px;
 
   .example-list__link:hover &::before {
     opacity: 1;

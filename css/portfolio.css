@@ -476,8 +476,6 @@ img {
 .example-list__thumb {
   position: relative;
   overflow: hidden;
-  width: 450px;
-  height: 404px;
 }
 
 .example-list__link:hover .example-list__thumb::before {
