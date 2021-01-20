@@ -1,4 +1,7 @@
 .hero__contener {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: linear-gradient(
@@ -7,8 +10,7 @@
     ),
     url("../images/hero/bg-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  background-position: center center;
 }
 
 .hero__title {
@@ -57,12 +59,12 @@
   .hero__contener {
     padding-top: 200px;
     padding-bottom: 200px;
-    min-width: 1600px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/hero/bg-desktop.jpg");
+    background-size: 1600px 600px;
   }
 
   .hero__title {

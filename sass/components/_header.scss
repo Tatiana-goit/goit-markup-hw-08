@@ -124,7 +124,7 @@
 }
 
 .address__list-item {
-  width: 480px;
+  // width: 480px;
   text-align: center;
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -172,6 +172,9 @@
 
   .menu-contener {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 515px;
     height: 78px;
     padding-top: 0px;
     padding-left: 0;
