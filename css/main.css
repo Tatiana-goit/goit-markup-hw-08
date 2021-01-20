@@ -61,12 +61,12 @@ img {
 .contener {
   width: 100%;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .contener {
     max-width: 480px;
-    margin: 0 auto;
   }
 }
 
@@ -210,7 +210,7 @@ img {
 .menu-contener {
   height: 400px;
   padding-top: 60px;
-  background-color: transparent;
+  background-color: white;
   text-align: center;
   border-top: 1px solid #eeeeee;
   z-index: 2;
