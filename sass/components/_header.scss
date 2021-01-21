@@ -244,7 +244,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
   }
 
   .address__list-item {
@@ -262,11 +262,3 @@
     }
   }
 }
-
-// .address__list {
-//   @media screen and (max-width: 1200px) {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//   }
-// }
