@@ -25,7 +25,14 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 392px) {
+  .filter__list-item {
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 392px) and (max-width: 768px) {
   .filter__list-item {
     &:not(:nth-child(n + 4)) {
       margin-bottom: 15px;

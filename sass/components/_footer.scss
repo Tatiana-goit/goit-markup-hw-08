@@ -1,71 +1,4 @@
-Skip
-  to
-  content
-  Search
-  or
-  jump
-  to…
-  Pull
-  requests
-  Issues
-  Marketplace
-  Explore
-  @Tatiana-goit
-  Learn
-  Git
-  and
-  GitHub
-  without
-  any
-  code!
-  Using
-  the
-  Hello
-  World
-  guide,
-you’ll start a branch,
-write comments,
-and
-  open
-  a
-  pull
-  request.
-  Tatiana-goit
-  /
-  goit-markup-hw-08
-  1
-  00
-  Code
-  Issues
-  Pull
-  requests
-  Actions
-  Projects
-  Wiki
-  Security
-  Insights
-  Settings
-  goit-markup-hw-08/sass/components/_footer.scss
-  @Tatiana-goit
-  Tatiana-goit
-  Исправление
-  ошибок
-  2
-  Latest
-  commit
-  75e1d0f
-  2
-  hours
-  ago
-  History
-  1
-  contributor
-  133
-  lines
-  (109 sloc)
-  2.1
-  KB
-  .footer {
+.footer {
   background-color: #2f303a;
 }
 
@@ -113,6 +46,10 @@ and
   margin: 0 auto;
 }
 
+.footer__form {
+  text-align: center;
+}
+
 .footer__form-email {
   width: 450px;
   height: 50px;
@@ -121,6 +58,10 @@ and
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 }
 
 .footer__form-button {
