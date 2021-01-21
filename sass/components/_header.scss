@@ -71,6 +71,11 @@
     width: 100%;
   }
 }
+
+.navigation__list {
+  margin-bottom: 60px;
+}
+
 .navigation__list-item {
   &:not(:last-child) {
     margin-bottom: 40px;
@@ -113,19 +118,17 @@
     top: 280px;
     left: 0;
   }
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .address__list {
-  @media screen and (max-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 .address__list-item {
-  // width: 480px;
-  text-align: center;
   &:not(:last-child) {
     margin-bottom: 16px;
   }
@@ -142,7 +145,7 @@
 }
 
 .address__list-link {
-  @include font(500, 14px, 1.143, left, 0.02em);
+  @include font(500, 18px, 1.166, center, 0.02em);
   color: var(--text-color);
   transition-property: color;
   transition-duration: 250ms;
@@ -174,7 +177,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // width: 515px;
     height: 78px;
     padding-top: 0px;
     padding-left: 0;
@@ -190,6 +192,7 @@
     align-items: center;
     margin-left: 88px;
     margin-right: 84px;
+    margin-bottom: 0;
   }
 
   .navigation__list-item {
@@ -212,7 +215,9 @@
   }
 
   .address__list {
+    text-align: left;
   }
+
   .address__list-item {
     &:not(:last-child) {
       margin-bottom: 10px;
@@ -220,7 +225,7 @@
   }
 
   .address__list-link {
-    align-items: center;
+    align-items: left;
     @include font(500, 12px, 1.666, left, 0.02em);
   }
 }
@@ -237,6 +242,7 @@
 
   .address__list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: baseline;
   }
@@ -245,12 +251,22 @@
     width: 100%;
   }
   .address__list-link {
-    @include font(500, 18px, 1.143, left, 0.02em);
+    @include font(500, 14px, 1.143, left, 0.02em);
+    display: flex;
   }
 
   .address__list-item {
     &:not(:last-child) {
       margin-right: 30px;
+      margin-bottom: 0;
     }
   }
 }
+
+// .address__list {
+//   @media screen and (max-width: 1200px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//   }
+// }
