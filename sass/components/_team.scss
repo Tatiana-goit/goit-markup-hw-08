@@ -15,6 +15,10 @@
   border-radius: 0px 0px 4px 4px;
 }
 
+.about__list-img {
+  width: 100%;
+}
+
 .team__list-about {
   padding-top: 30px;
   padding-bottom: 24px;
@@ -31,11 +35,6 @@
   margin-bottom: 16px;
   @include font(400, 16px, 1.187, center, 0.03em);
   color: var(--text-color);
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .contener {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {

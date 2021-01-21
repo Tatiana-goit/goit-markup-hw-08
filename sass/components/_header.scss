@@ -211,15 +211,15 @@
     }
   }
 
+  .address__list {
+  }
   .address__list-item {
-    display: block;
     &:not(:last-child) {
       margin-bottom: 10px;
     }
   }
 
   .address__list-link {
-    display: flex;
     align-items: center;
     @include font(500, 12px, 1.666, left, 0.02em);
   }
@@ -245,7 +245,7 @@
     width: 100%;
   }
   .address__list-link {
-    @include font(500, 14px, 1.143, left, 0.02em);
+    @include font(500, 18px, 1.143, left, 0.02em);
   }
 
   .address__list-item {
